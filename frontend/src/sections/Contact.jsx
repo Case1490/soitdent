@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 bg-contact">
+    <section id="contactanos" className="py-12 bg-contact">
       <Container>
         <h2 className="text-3xl font-bold text-center mb-10">Contáctanos</h2>
         <Row className="justify-center pt-10">

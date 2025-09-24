@@ -6,7 +6,7 @@ import Service3 from "../assets/servicio3.png";
 
 const Services = () => {
   return (
-    <div className="my-8 bg-service py-8 relative">
+    <div className="my-8 bg-service py-8 relative" id="servicios">
       <div className="w-5/6 m-auto text-center relative z-10">
         <h2>Nuestros Servicios</h2>
         <p>

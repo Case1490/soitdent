@@ -5,7 +5,7 @@ import Doctor2 from "../assets/odontologa2.jpg";
 
 const Specialists = () => {
   return (
-    <div className="my-8 py-8">
+    <div className="my-8 py-8" id="especialistas">
       <div className="w-5/6 m-auto text-center">
         <h2>Especialistas</h2>
         <p>

@@ -72,7 +72,7 @@ const Blog = () => {
   };
 
   return (
-    <section className="py-12">
+    <section className="py-12" id="blog">
       <Container>
         <h2 className="text-3xl font-bold text-center mb-10">
           Nuestro Blog / Artículos

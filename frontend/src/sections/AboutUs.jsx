@@ -5,7 +5,7 @@ import CardAboutUs from "../components/CardAboutUs";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div id="nosotros">
       <div className="w-5/6 m-auto min-h-screen flex items-center justify-center gap-x-20">
         <div className="w-full max-w-lg">
           <img
