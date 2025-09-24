@@ -12,7 +12,7 @@ const NavbarComponent = () => {
       <div className="w-5/6 m-auto">
         <Navbar expand="lg" className="py-0">
           <Container fluid>
-            <Navbar.Brand href="#" className="w-[80px]">
+            <Navbar.Brand href="/" className="w-[80px]">
               <img src={Logo} alt="Logo de la clínica" className="w-full" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -29,7 +29,9 @@ const NavbarComponent = () => {
                 <Nav.Link href="#contactanos">Contáctanos</Nav.Link>
               </Nav>
 
-              <Button variant="outline-primary">Intranet</Button>
+              <Nav.Link href="/intranet" className="button-link">
+                Intranet
+              </Nav.Link>
             </Navbar.Collapse>
           </Container>
         </Navbar>

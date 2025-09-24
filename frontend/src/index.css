@@ -34,6 +34,18 @@ h3{
   font-size: 2rem;
 }
 
+.button-link{
+  color: var(--BlueMain);
+  border: 1px solid var(--BlueMain);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.button-link:hover{
+  color: white;
+  background-color: var(--BlueMain);
+}
+
 .bg-banner {
   position: relative;
   /* Necesario para que el ::before se posicione relativo */
