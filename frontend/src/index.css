@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root{
+  --BlueMain: rgba(0, 123, 255, 0.8);
+  --BlueSecond: rgba(0, 71, 148, 0.4);
+  --BlueThird: #1A4D8C;
+  --YellowMain: #ffd700;
+}
+
+body{
+  font-family: "Raleway", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  color: var(--YellowMain);
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+h2{
+  color: var(--BlueMain);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3{
+  color: var(--BlueThird);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.bg-banner {
+  position: relative;
+  /* Necesario para que el ::before se posicione relativo */
+  background-image: url('./assets/banner.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  /* llega hasta la mitad */
+  background: linear-gradient(to right,
+      var(--BlueMain),
+      /* azul tipo primary Bootstrap */
+      var(--BlueSecond),
+      transparent);
+  z-index: 1;
+}
+
+/* Asegura que el contenido quede encima del degradado */
+.bg-banner>div {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-service {
+  position: relative;
+  background-image: url('./assets/fondo-servicios.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.bg-offers {
+  background-image: url('./assets/ofertas.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.bg-contact{
+  background-image: url('./assets/contacto.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
